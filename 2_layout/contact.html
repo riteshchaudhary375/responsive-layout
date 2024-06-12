@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Layout</title>
+    <!-- Add icon library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- STYLE FILE -->
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <!-- HEADER SECTION -->
+    <header>
+      <div class="container flex">
+        <button class="nav-toggle" aria-label="open navigation">
+          <span class="hamburger"></span>
+        </button>
+        <a href="./index.html">
+          <img class="logo" src="./image/logo.svg" alt="company logo" />
+        </a>
+        <nav class="nav-bar flex">
+          <ul class="nav-list primary-nav-list">
+            <li class="nav-item">
+              <a href="./index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="./about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="./contact.html" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+          </ul>
+          <ul class="nav-list secondary-nav-list">
+            <li class="nav-item">
+              <a href="./signin.html" class="nav-link">Sign In</a>
+            </li>
+            <li class="nav-item">
+              <a href="./signup.html" class="nav-link btn btn-sign-up"
+                >Sign Up</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <div class="container main-flex">
+        <div class="left-section">
+          <div class="section-1">
+            <h2>Responsive Layout</h2>
+            <p>Responsive Layout - Premium UI approach for system design</p>
+          </div>
+          <div class="section-2">
+            <h2>Call us</h2>
+            <p>+977 9845715149</p>
+            <p>01-45459980</p>
+          </div>
+          <div class="section-3">
+            <h2>Find us</h2>
+            <p>4600 Trade Tower, Kathmandu</p>
+          </div>
+        </div>
+        <div class="right-section">
+          <h1>Get in touch</h1>
+          <form>
+            <div class="form-div">
+              <!-- <label for="name">Your name</label> -->
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter name"
+              />
+            </div>
+            <div class="form-div">
+              <!-- <label for="email">Your email</label> -->
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter email"
+              />
+            </div>
+            <div class="form-div">
+              <!-- <label for="message">Your message</label> -->
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Enter message"
+                rows="4"
+              ></textarea>
+            </div>
+            <button class="btn btn-sign-up btn-message">Send</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container flex">
+        <div class="footer-1 footer-col">
+          <p>&#169;2024 All rights reserved</p>
+        </div>
+        <div class="footer-2 footer-2-cols footer-col flex">
+          <p class="footer-2-p">Terms & Conditions</p>
+          <p class="footer-2-p">Privacy Policy</p>
+          <p class="footer-2-p">Cookies Policy</p>
+        </div>
+        <div class="footer-3 footer-col">
+          <a href="#" class="fa fa-facebook footer-3-icons"></a>
+          <a href="#" class="fa fa-twitter footer-3-icons"></a>
+          <a href="#" class="fa fa-linkedin footer-3-icons"></a>
+          <a href="#" class="fa fa-github footer-3-icons"></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
