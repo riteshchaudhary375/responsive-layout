@@ -34,7 +34,8 @@ body {
   border: 2px solid #000000;
 }
 
-h1 {
+h1,
+h2 {
   font-family: var(--font-family-1);
   font-weight: 700;
   line-height: var(--line-height);
@@ -74,6 +75,11 @@ a {
 
 .text-gold {
   color: var(--text-gold-color);
+}
+
+img {
+  max-width: 100%;
+  /* display: block; */
 }
 
 .col {
@@ -130,4 +136,38 @@ a {
 .feature-text {
   font-size: 1.8rem;
   margin-top: var(--margin-text);
+}
+
+/* MAIN SECTION */
+main {
+  padding: var(--padding-section);
+}
+
+.left-content-title {
+  color: var(--text-gold-color);
+  font-size: 3.6rem;
+}
+
+.left-content-text {
+  font-size: 2.1rem;
+  margin-top: var(--margin-text);
+}
+
+.right-content {
+  margin-top: var(--margin-col);
+}
+
+.main-col {
+  background: var(--background-light-color);
+  color: var(--text-white-color);
+}
+
+.right-content-title {
+  font-size: 3rem;
+  margin-bottom: var(--margin-text);
+}
+
+.right-content-text {
+  font-size: 1.8rem;
+  color: var(--text-dark-color);
 }
