@@ -76,6 +76,16 @@ a {
   color: var(--text-gold-color);
 }
 
+.col {
+  /* background: lightcoral; */
+  padding: 3em;
+  text-align: center;
+}
+
+.col + .col {
+  margin-top: var(--margin-col);
+}
+
 /* HERO SECTION */
 .hero {
   background: var(--background-light-color);
@@ -105,4 +115,19 @@ a {
   font-size: 2.4rem;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+/* FEATURE SECTION */
+.feature {
+  background: #e4e4e4;
+  padding: var(--padding-section);
+}
+
+.feature-title {
+  font-size: 3rem;
+}
+
+.feature-text {
+  font-size: 1.8rem;
+  margin-top: var(--margin-text);
 }
