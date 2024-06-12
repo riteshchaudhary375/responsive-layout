@@ -322,3 +322,148 @@ footer {
 .footer-content-text-item + .footer-content-text-item {
   margin-top: var(--margin-text);
 }
+
+/* MEDIA QUERIES */
+@media (min-width: 700px) {
+  .flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-bar {
+    visibility: visible;
+    height: auto;
+    pointer-events: auto;
+    position: relative;
+
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .nav-list {
+    display: flex;
+    margin: 0;
+  }
+
+  .primary-nav-list {
+    margin: 0;
+  }
+
+  .nav-item {
+    margin: 0 0 0 2em;
+  }
+
+  .nav-link {
+    margin: 0;
+  }
+
+  .secondary-nav-list {
+    margin: 0;
+    align-items: center;
+  }
+
+  /* HERO SECTION */
+  .hero-title {
+    width: 47%;
+  }
+
+  .hero-content {
+    width: 50%;
+  }
+
+  .hero-btn {
+    margin-top: 2em;
+  }
+
+  .col + .col {
+    margin: 0;
+  }
+
+  /* MAIN SECTION */
+  /* LEFT CONTENT */
+  .main-img {
+    display: block;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* ASIDE */
+  .main-col + .main-col {
+    margin-left: 1em;
+  }
+
+  /* FOOTER */
+
+  .footer-col-1 {
+    width: 37%;
+  }
+
+  .footer-col-2 {
+    width: 60%;
+  }
+
+  .footer-col {
+    padding: 1.5em;
+    text-align: start;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    width: 80%;
+  }
+
+  /* NAV */
+  .primary-nav-list {
+    margin: 0 auto;
+  }
+
+  /* HERO */
+  .hero-title {
+    width: 35%;
+    /* font-size: 3rem; */
+  }
+
+  .hero-content {
+    width: 60%;
+  }
+
+  /* MAIN */
+  .main-desktop {
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-start;
+    /* flex-basis: ; */
+  }
+
+  .left-content {
+    width: 62%;
+  }
+
+  .right-content {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+  }
+
+  .right-content {
+    margin: 0;
+  }
+
+  .main-col + .main-col {
+    margin-left: 0;
+    margin-top: var(--margin-col);
+  }
+
+  img {
+    max-width: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+}
