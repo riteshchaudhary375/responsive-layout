@@ -55,6 +55,10 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
 /* UTILITY CLASSES */
 .container {
   width: 95%;
@@ -170,4 +174,39 @@ main {
 .right-content-text {
   font-size: 1.8rem;
   color: var(--text-dark-color);
+}
+
+/* FOOTER SECTION */
+footer {
+  background: var(--background-light-color);
+  padding: var(--padding-section);
+}
+
+.footer-title {
+  color: var(--text-white-color);
+  font-size: 4.2rem;
+  text-align: center;
+}
+
+.footer-content {
+  margin-top: var(--margin-col);
+}
+
+.footer-col + .footer-col {
+  margin-top: 0;
+}
+
+.footer-content-title {
+  color: var(--text-gold-color);
+  font-size: 2.1rem;
+  margin-bottom: var(--margin-text);
+}
+
+.footer-content-text {
+  color: var(--text-dark-color);
+  font-size: 1.6rem;
+}
+
+.footer-content-text-item + .footer-content-text-item {
+  margin-top: var(--margin-text);
 }
