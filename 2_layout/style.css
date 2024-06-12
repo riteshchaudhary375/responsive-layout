@@ -64,6 +64,9 @@ li {
   width: 95%;
   max-width: 1200px;
   margin: 0 auto;
+
+  /* added for nav-toggle positioning */
+  position: relative;
 }
 
 .btn {
