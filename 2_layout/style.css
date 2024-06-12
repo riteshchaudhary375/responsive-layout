@@ -103,8 +103,70 @@ header {
   text-align: center;
 }
 
+.nav-toggle {
+  cursor: pointer;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  background: var(--background-light-color);
+  color: var(--text-white-color);
+  border: 0;
+  position: absolute;
+  left: 0;
+  padding: 0;
+
+  transition: opacity 0.3s ease;
+}
+
+.nav-toggle:focus,
+.nav-toggle:hover {
+  opacity: 0.75;
+}
+
+.hamburger {
+  width: 50%;
+  position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  display: block;
+  height: 3px;
+  background: var(--text-white-color);
+  margin: 0 auto;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  width: 100%;
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  transform: translateY(3px);
+}
+
 .nav-bar {
   width: 100%;
+}
+
+.nav-bar {
+  visibility: hidden;
+  height: 0;
+  pointer-events: none;
+  position: absolute;
+}
+
+.nav-bar-visible {
+  visibility: visible;
+  height: auto;
+  pointer-events: auto;
+  position: relative;
 }
 
 .nav-list {
